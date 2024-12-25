@@ -35,14 +35,14 @@ window.CONFIG = {
       url: 'http://t.me',
       normalisedURL: 't.me',
       triggers: [
-        'm',
+        't',
         'tm',
         'tg',
+        'tele',
         'teleg',
-        'telega',
         'telegram'
       ],
-      key: 'KeyM',
+      key: 'KeyT',
       commands: {
         go: {
           template: '{@}/{$}'
@@ -197,10 +197,8 @@ window.CONFIG = {
       url: 'https://translate.google.com',
       normalisedURL: 'translate.google.com',
       triggers: [
-        't',
         'translate'
       ],
-      key: 'KeyT',
       commands: {
         search: {
           template: '{@}/?text={$}',
@@ -345,17 +343,19 @@ window.CONFIG = {
     },
     {
       category: 'Social',
-      name: 'Twitter',
+      name: 'X',
       icon: 'twitter',
-      url: 'https://twitter.com',
-      normalisedURL: 'twitter.com',
+      url: 'https://x.com',
+      normalisedURL: 'X.com',
       triggers: [
-        'tt',
+        'X',
+        'x',
         'twt',
         'twit',
         'twitt',
         'twitter'
       ],
+      key: 'KeyX',
       commands: {
         search: {
           template: '{@}/search?q={$}'
@@ -366,7 +366,7 @@ window.CONFIG = {
       },
       bgColor: {
         type: 'solid',
-        color: '#1c99e6'
+        color: '#404344FF'
       },
       textColor: '#e8e8e8',
       pinned: true
@@ -397,6 +397,116 @@ window.CONFIG = {
       textColor: '#fff',
       pinned: true
     },
+    {
+      category: 'Communication',
+      name: 'Threads',
+      icon: 'threads',
+      url: 'https://threads.net',
+      normalisedURL: 'threads.net',
+      triggers: [
+        'th',
+        'threads',
+        'thread'
+      ],
+      key: 'KeyZ',
+      commands: {
+        search: {
+          template: '{@}/#search/{$}'
+        }
+      },
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'linear',
+        angle: 45,
+        colors: ['#2D2D2EFF', '#FFFFFF'],
+        stops: [50, 100]
+      },
+      textColor: '#FFFFFF',
+      pinned: true
+    },
+    {
+      category: 'Communication',
+      name: 'Gemini',
+      icon: 'gemini',
+      url: 'https://gemini.google.com',
+      normalisedURL: 'gemini.com',
+      triggers: [
+        'bard',
+        'ge',
+        'gemini',
+        'gem'
+      ],
+      key: 'KeyB',
+      commands: {
+        search: {
+          template: '{@}/#search/{$}'
+        }
+      },
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'linear',
+        angle: 45,
+        colors: ['#DC75E6FF', '#FFFFFF'],
+        stops: [50, 100]
+      },
+      textColor: '#FFFFFF',
+      pinned: true
+    },
+    {
+      category: 'Learning',
+      name: 'GeeksforGeeks',
+      icon: 'gfg',
+      url: 'https://www.geeksforgeeks.org',
+      normalisedURL: 'geeksforgeeks.org',
+      triggers: [
+        'gfg',
+        'geeks',
+        'geeksforgeeks'
+      ],
+      key: 'KeyP',
+      commands: {
+        search: {
+          template: '{@}/#search/{$}'
+        }
+      },
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'linear',
+        angle: 45,
+        colors: ['#0F9D58', '#e8e8e8'],
+        stops: [50, 100]
+      },
+      textColor: '#FFFFFF',
+      pinned: true
+    },
+    {
+      category: 'Learning',
+      name: 'LeetCode',
+      icon: 'leetcode',
+      url: 'https://leetcode.com',
+      normalisedURL: 'leetcode.com',
+      triggers: [
+        'lc',
+        'leetcode',
+        'leet'
+      ],
+      key: 'KeyO',
+      commands: {
+        search: {
+          template: '{@}/#search/{$}'
+        }
+      },
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'linear',
+        angle: 45,
+        colors: ['#FF6600', '#000000'],
+        stops: [50, 100]
+      },
+      textColor: '#FFFFFF',
+      pinned: true
+    },
+    
     {
       category: 'Communication',
       name: 'Gmail',
@@ -430,6 +540,7 @@ window.CONFIG = {
       name: 'Google Drive',
       triggers: [
         'gd',
+        'dr',
         'drive',
         'gdrive',
         'google',
@@ -457,7 +568,7 @@ window.CONFIG = {
       ],
       icon: 'amazon',
       key: 'KeyA',
-      url: 'https://www.amazon.com/',
+      url: 'https://www.amazon.in/',
       normalisedURL: 'amazon.com',
       bgColor: {
         type: 'gradient',
